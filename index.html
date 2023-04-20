@@ -3,113 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="profile" content="멋진 고양이 프로필">
+    <title>profile</title>
     <style>
         @font-face {
-            font-family: 'MapoHongdaeFreedom';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoHongdaeFreedomA.woff') format('woff');
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
-      
-      /* body태그 자체에 css 요소 부여 수정*/
-      body {
-	    font-family: "MapoHongdaeFreedom";
-	    margin: 0;
-	    display: flex;
-	    justify-content: center;
-	    background-image: url("./background.png");
-      }
+        body{
+            font-family: 'GmarketSansMedium';
+            
+            background-image: url(bg.png);
+            background-repeat: repeat-x;
+            background-color: #00702d;
 
-      .container {
-        width: 390px;
-        background-color: rgb(255, 242, 227);
-        height: 1200px;
-        margin: 50px;
-      }
+            margin-top: 100px;
+         }
+         .selfie{
+            width: 100px; height: 100px;
+            border-radius: 100%;
+            border: 3px solid white;
+    
+            background-color: rgb(136, 136, 136);
+            background-image: url(1.jpg);
+            background-size: cover;
+            background-position: center; 
+         }
+         .main{
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+         }
+         .sub{
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 10px;
+         }
+         .wrap {
+            width: 300px;
+            margin: 30px auto 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         .wrap > a{
+           width: 310px;
+           height: 110px; 
 
-      .photos {
-        margin: 30px;
-      }
+           background-image: url(bt.png);
+           background-size: cover;
+           background-position: center; 
 
-      .photo-frame {
-       background-color: rgb(63, 63, 63); 
-       margin: 20px 5px;
-       height: 200px;
+           margin-top: 20px;
 
-       background-size: cover;
-      }
+           font-size: 20px;
+           font-weight: bold;
+           color: rgb(0, 100, 240);
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
 
-      .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+           text-decoration: none;
 
-      .f-title {
-        text-align: center;
-        color: rgb(220, 71, 25);
-        font-size: 40pt;
-        margin: 10px;
-      }
-
-      .f-date {
-        color: rgb(194, 67, 13);
-        font-size: 15pt;
-        font-weight: 500;
-      }
-
-      #image1 {
-        background-image: url(./1.jpg);
-    }
-
-    #image2 {
-        background-image: url(./2.jpg);
-    }
-
-    #image3 {
-        background-image: url(./3.jpg);
-    }
-
-    #image4 {
-        background-image: url(./4.jpg);
-    }
-
-    .showText
+         }
+         .wrap > a:hover{
+            background-image: url(bt_hover.png);
+         }
     </style>
 </head>
-<body>
-   <div class="container">
-    <div class="photos">
-        <div id="image1" class="photo-frame">
-            <span id="desc1" class="photo_description">
-                
-            </span>
-        </div>
-        <div id="image2" class="photo-frame">
-            <span id="desc2" class="photo_description">
-                
-            </span>
-        </div>
-        <div id="image3" class="photo-frame">
-            <span id="desc3" class="photo_description">
-                
-            </span>
-        </div>
-        <div id="image4" class="photo-frame">
-            <span id="desc4" class="photo_description">
-                
-            </span>
-        </div>
-    </div>
-    <div class="footer">
-        <p class="f-title">best cool-<br>cat ever</p>
-        <p class="f-date">2023.04.18</p>
-    </div>
-    <p class="f-date">수정수정수정2222</p>
 
-   </div>
+<body>
+    <div class="wrap">
+    <div class="selfie"></div>
+    <h1 class="main">멋진 고양이</h1>
+    <p class="sub">어, 왔니?</p>
+    <a target="_blank" href="https://spartacodingclub.kr/">instagram</a>
+    <a target="_blank" href="https://hanghae99.spartacodingclub.kr/">youtube</a>
+    <a target="_blank" href="https://chang.spartacodingclub.kr/">portfolio</a>
+    </div>
 </body>
 </html>
-
